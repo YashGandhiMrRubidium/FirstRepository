@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Random Number in Sec Code</h2>
+
+<p id="demo"></p>
+
+<script>
+function generateRandomNumber() {
+ var numOfDecimalPlaces = 2;
+ var randomNumber = Math.random();
+ randomNumber = randomNumber * Math.pow(10, numOfDecimalPlaces);
+ randomNumber = Math.floor(randomNumber);
+ return randomNumber;
+}
+
+document.getElementById("demo").innerHTML = generateRandomNumber();
+</script>
+
+</body>
+</html>
